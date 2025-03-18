@@ -1,5 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
+body { /* Estilos generales */
+    font-family: Arial, sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -36,6 +36,7 @@ header {
     }
 }
 
+/* Tipo de texto especial (para la palabra "Kamikaze") */
 .txt-especial {
     font-family: "Permanent Marker", cursive;
     font-weight: 100;
@@ -44,6 +45,7 @@ header {
     text-shadow: #490a0a 1px 0 10px;
 }
 
+/* Menú de navegación de la cabecera */
 nav {
     margin-right: 30px;
     display: flex;
@@ -64,17 +66,18 @@ nav {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 5fr; /* Columna de 1fr para el menú lateral (el 'aside') | Columna de 5fr para el resto de contenido */
     margin: 0;
     padding-top: 114px;
     overflow: hidden;
 }
 
+/* Menú lateral dentro del body */
 aside {
     background: linear-gradient(to right, #4e4e4e 60%, #575757);
     color: white;
-    grid-row: 1/4;
-    grid-column: 1;
+    grid-row: 1/4; /* Para ocupar todas las filas */
+    grid-column: 1; /* Para ubicarlo en la primera columna */
     padding: 20px;
     h2 {
         color: white;
@@ -92,6 +95,7 @@ aside {
     }
 }
 
+/* Estilo que heredan los elementos 'article' */
 article {
     background: #fff;
     margin: 20px 20px;
@@ -100,15 +104,18 @@ article {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Línea para separar entre los 'article' */
 section hr {
     width: 65%;
 }
 
+/* Estilo que heredan los títulos dentro de cada elemento 'section' */
 section h2 {
     letter-spacing: 1px;
     text-align: center;
 }
 
+/* Primer 'section' */
 #principal {
     grid-column: 2;
     margin-top: 20px;
@@ -133,6 +140,7 @@ section h2 {
     }
 }
 
+/* 'section' con las fotos */
 #galeria {
     background-color: #333;
     grid-column: 2;
@@ -144,6 +152,7 @@ section h2 {
     }
 }
 
+/* Contenedor para las imágenes */
 #imagenes {
     display: flex;
     flex-direction: column;
@@ -164,6 +173,7 @@ section h2 {
     height: 360px;
 }
 
+/* Para organizar los dos 'div' con imágenes dentro del contenedor de #imagenes */
 #cont-medio-img {
     display: flex;
     flex-direction: row;
@@ -200,6 +210,7 @@ section h2 {
     height: 360px;
 }
 
+/* 'section' de detalles */
 #detalles {
     grid-column: 2;
     margin-top: 20px;
